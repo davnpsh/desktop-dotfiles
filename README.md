@@ -14,6 +14,10 @@ A collection of dotfiles and some other configuration files to customize and add
 
 ## Table of contents
 
+* [Design philosophy](https://github.com/davnpsh/desktop-dotfiles/#design-philosophy)
+* [Installation](https://github.com/davnpsh/desktop-dotfiles/#installation)
+    * [Dependencies/Software stack](https://github.com/davnpsh/desktop-dotfiles/#dependenciessoftware-stack)
+
 ## Design philosophy
 I am not the best at design, but here is my try...
 
@@ -23,7 +27,9 @@ I try to apply, whenever I can, mocha with mauve accent from the [Catppuccin](ht
 
 Also, dark theme is a must. I don't like light backgrounds since they hurt my eyes.
 
-## Dependencies/Software stack
+## Installation
+
+### Dependencies/Software stack
 
 These packages must be installed before moving config files into the system:
 
@@ -37,8 +43,16 @@ These packages must be installed before moving config files into the system:
 * **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
 * **Menus:** [rofi](https://github.com/davatorium/rofi)
 
-Since I use Arch Linux:
+Since (btw) I use **Arch Linux**:
 
 ```bash
 doas pacman -S bspwm picom sxhkd dunst neofetch betterlockscreen polybar alacritty rofi
 ```
+
+### Fonts
+
+I like JetBrains Mono font for every aspect of my desktop.
+
+# 
+
+![gnu_linux](./.imgs/gnu-linux.gif) ![arch_linux](./.imgs/archlinux.gif) ![neovim](./.imgs/neovim.gif) 
