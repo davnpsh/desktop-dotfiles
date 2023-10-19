@@ -1,0 +1,41 @@
+#! /bin/sh
+
+# Monitors
+internal_monitor=eDP-1
+external_monitor=HDMI-1-0
+
+# ---- MONITOR SETUP ----
+# Check if desktops are distributed 
+desktops_on_external=$(bspc query -D -m $external_monitor | wc -l)
+
+if [[ $desktops_on_external == 0 ]]; then
+    bspc monitor $internal_monitor -d I II III IV V VI VII VIII IX X
+else
+    bspc monitor $internal_monitor -d I II III IV V VI VII VIII
+    bspc monitor $external_monitor -d IX X
+fi
+
+# ---- START-UP ROUTINE ----
+pgrep -x sxhkd > /dev/null || sxhkd &		        # sxhkd
+pgrep -x picom > /dev/null || picom &		        # picom
+dunst &						                        # notifications
+$HOME/.config/polybar/launch.sh &		            # polybar
+$HOME/.fehbg &					                    # wallpaper
+ckb-next -b &				            	        # keyboard icue
+
+# ---- LOOK & FEEL ----
+bspc config border_width                2
+bspc config window_gap                  12
+
+bspc config split_ratio                 0.52
+bspc config pointer_motion_interval     7		    # for 144hz
+bspc config borderless_monocle          true
+bspc config gapless_monocle             true
+
+bspc config focused_border_color        '#cba6f7'
+
+# ---- BEHAVIOUR ----
+xsetroot -cursor_name left_ptr &		            # mouse pointer
+
+# ---- RULES ----
+# bspc rule -a Chromium desktop='^2'
