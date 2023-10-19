@@ -55,4 +55,8 @@ I like JetBrains Mono font for every aspect of my desktop.
 
 # 
 
-![gnu_linux](./.imgs/gnu-linux.gif) ![arch_linux](./.imgs/archlinux.gif) ![neovim](./.imgs/neovim.gif) 
+<div align="center">
+
+![gnu_linux](./.imgs/gnu-linux.gif) [![arch_linux](./.imgs/archlinux.gif)](https://archlinux.org/) [![neovim](./.imgs/neovim.gif)](https://neovim.io/)
+
+</div>
