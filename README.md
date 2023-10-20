@@ -49,11 +49,12 @@ These packages must be installed before moving config files into the system:
 * **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
 * **Menus:** [rofi](https://github.com/davatorium/rofi)
 * **Display manager:** [lightdm](https://github.com/canonical/lightdm)
+* **Wallpaper:** [feh](https://feh.finalrewind.org/)
 
 Since (btw) I use **Arch Linux**:
 
 ```bash
-doas pacman -S bspwm picom sxhkd dunst neofetch betterlockscreen polybar alacritty rofi lightdm
+doas pacman -S bspwm picom sxhkd dunst neofetch betterlockscreen polybar alacritty rofi lightdm feh
 ```
 
 ### Other software
