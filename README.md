@@ -20,6 +20,8 @@ A collection of dotfiles and some other configuration files to customize and add
     * [Other software](https://github.com/davnpsh/desktop-dotfiles/#other-software)
     * [Fonts](https://github.com/davnpsh/desktop-dotfiles/#fonts)
     * [dotfiles](https://github.com/davnpsh/desktop-dotfiles/#dotfiles)
+* [Wallpapers](https://github.com/davnpsh/desktop-dotfiles/#wallpapers)
+* [Credits](https://github.com/davnpsh/desktop-dotfiles/#credits)
 
 
 ## Design philosophy
@@ -54,7 +56,7 @@ Since (btw) I use **Arch Linux**:
 doas pacman -S bspwm picom sxhkd dunst neofetch betterlockscreen polybar alacritty rofi lightdm
 ```
 
-### Other Software
+### Other software
 
 Other packages can be installed, but in case I find better replacements for it I might consider changing this section.
 
@@ -110,6 +112,23 @@ Finally, remove the tempdir:
 ```bash
 cd && rm -r $tempdir
 ```
+
+## Wallpapers
+
+I generate my wallpapers using [farbenfroh.io](https://farbenfroh.io/).
+
+<div align="center">
+
+<img src="./imgs/input-wallpaper.jpg" alt="catppuccin_cat" width="45%">
+<img src="./imgs/output-wallpaper.png" alt="catppuccin_cat" width="45%">
+
+</div>
+
+## Credits
+
+* I already said it, but again, the theme is [Catppuccin](https://github.com/catppuccin/catppuccin).
+* Thanks to [adi1090x](https://github.com/adi1090x) for the rofi menus. Some of them in my config are from [here](https://github.com/adi1090x/rofi).
+
 
 # 
 
